@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja de Roupas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="shop-items">
+  <div class="item">
+    <img src="/imgs/imagens/Macacões/macacao 1.jpg" alt="Blusa 1">
+    <h2>Blusa Floral</h2>
+    <p class="price">$50</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="item">
+    <img src="/imgs/imagens/Macacões/macacao 2.jpg" alt="Blusa 2">
+    <h2>Blusa Listrada</h2>
+    <p class="price">$45</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="item">
+    <img src="/imgs/imagens/Macacões/macacao 3.jpg" alt="Blusa 3">
+    <h2>Blusa Casual</h2>
+    <p class="price">$55</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+  <div class="item">
+    <img src="/imgs/imagens/Macacões/macacao 4.jpg" alt="Blusa Elegante">
+    <div class="item-info">
+      <h2>Blusa Elegante</h2>
+      <p class="price">$60</p>
+      <button class="buy-btn">Comprar</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="/imgs/imagens/Macacões/macacao 5.jpg" alt="Blusa de Linho">
+    <div class="item-info">
+      <h2>Blusa de Linho</h2>
+      <p class="price">$65</p>
+      <button class="buy-btn">Comprar</button>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="/imgs/imagens/Macacões/macacao 6.jpg" alt="Blusa de Seda">
+    <div class="item-info">
+      <h2>Blusa de Seda</h2>
+      <p class="price">$70</p>
+      <button class="buy-btn">Comprar</button>
+    </div>
+  </div>
+
+  <!-- Adicione mais itens conforme necessário -->
+
+</section>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px) rotateX(10deg);
+}
+
+.item img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: contain;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.item-info {
+  padding: 20px;
+}
+
+.item-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.buy-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  width: 100%;
+}
+
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+</style>
+
+</body>
+</html>
